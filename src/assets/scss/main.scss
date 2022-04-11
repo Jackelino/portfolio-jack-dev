@@ -1,0 +1,107 @@
+
+//import moulue bootstrap
+@import "bootstrap/scss/bootstrap.scss";
+//import moudule icon bootstrap
+@import "bootstrap-icons/font/bootstrap-icons.css";
+//import moulue bootstrap
+@import "fontawesome/scss/fontawesome.scss";
+@import "fontawesome/scss/solid.scss";
+@import "fontawesome/scss/brands.scss";
+
+// Variables
+
+//space
+$space-1: 0.5rem;
+$space-2: 0.75rem;
+$space-3: 1rem;
+
+//color
+$blue: #31475e;
+$green: #42b883;
+$black: #1A202C;
+
+//*********** General ********
+//text
+.text-decoration{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-color: #31475ee3;
+    text-decoration-thickness: 4px;
+    margin-top: $space-2;
+    margin-bottom: $space-3;
+}
+
+.text-align{
+    text-align: justify;
+}
+
+.text-black{
+    color:  $black !important;
+}
+
+//space
+.space-3{
+    margin: $space-3;
+}
+
+/* Main */
+.main{
+    text-align: center;
+}
+
+.pad{
+    padding-top: 80px;
+}
+
+/* Name */
+
+.name{
+    text-align: center;
+}
+
+.profession{
+    background-color: 
+    #637485;
+    color: #fff;;
+    text-align: center;
+    padding: $space-3;
+    border-radius: $space-1;
+}
+
+// Skills
+
+.list-skills{
+    list-style: none;
+}
+
+.html5{
+    color: #F25320;
+}
+.css{
+    color: #006AB1;
+}
+.sass{
+    color: #CF649A;
+}
+.javascript{
+    color: #F2D501;
+}
+.php{
+    color: #8892BF;
+}
+.python{
+    color: #3873A3;
+}
+.git{
+    color: #F44D27;
+}
+.vue{
+    color: #3EAF7C;
+}
+.laravel{
+    color: #FF2D20;
+}
+.bootstrap{
+    color: #7952B3;
+}
+

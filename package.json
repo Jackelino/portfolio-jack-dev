@@ -1,17 +1,21 @@
 {
   "name": "portfolio-jack-dev",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.2.25"
+    "bootstrap-icons": "^1.8.1",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.14",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.0",
+    "sass": "^1.50.0",
     "vite": "^2.9.0"
   }
 }
