@@ -12,9 +12,9 @@
                             <router-link to="/portfolio" class="nav-link ">Portafolio</router-link>
                         </li>
                         <li>
-                            <button type="button"  :class="buttonTheme" @click="toogleTheme" >
-                                <i v-if="!theme" class="bi bi-moon-stars"></i>
-                                <i  v-if="theme" class="bi bi-brightness-high"></i>
+                            <button type="button"  :class="buttonTheme" @click="actionChangeTheme" >
+                                <i v-if="!setting.stateTheme" class="bi bi-moon-stars"></i>
+                                <i  v-if="setting.stateTheme" class="bi bi-brightness-high"></i>
                             </button>
                         </li>
                     </ul>
@@ -23,21 +23,21 @@
     </header>
 </template>
 <script>
+import {mapState, mapMutations, mapActions } from "vuex";
 export default {
     name: 'Header',
     data(){
         return{
-            theme: false,
+            
         }  
     },
     methods: {
-        toogleTheme : function (){
-            (this.theme==false) ? this.theme = true : this.theme = false ;
-        }
+        ...mapActions(['actionChangeTheme']),
     },
     computed: {
+        ...mapState(['setting']),
         buttonTheme: function (){
-            return (this.theme == true) ? 'btn btn-light' : 'btn btn-dark';
+            return (this.setting.stateTheme == true) ? 'btn btn-light' : 'btn btn-dark';
         }
     }
 
@@ -51,5 +51,5 @@ export default {
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
         padding: 20px 40px;
-}
+    }
 </style>

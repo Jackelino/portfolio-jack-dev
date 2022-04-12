@@ -1,5 +1,5 @@
 <template>
-    <div class="container pad">
+    <div class="container position-static pad">
         <router-view></router-view>
     </div>
 </template>
@@ -10,6 +10,7 @@ export default {
 </script>
 
 <style scoped>
+    
     .home{
         min-height: 100vh;   
         padding-top: 90px;
