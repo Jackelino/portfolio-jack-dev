@@ -21,7 +21,17 @@ export default createStore({
 
     },
     theme(state, payload){
-      state.setting.stateTheme = payload;
+      if(payload === true){
+        state.setting.stateTheme = true;
+        state.setting.theme = 'bg-dark';
+        localStorage.setItem('theme',true);
+        alert(payload);
+      }else{
+        alert(payload);
+        state.setting.stateTheme = false;
+        state.setting.theme = 'bg-light';
+        localStorage.setItem('theme',false);
+      }
     }
 
   },
@@ -34,5 +44,5 @@ export default createStore({
     }
   },
   modules: {
-  }
+  },
 })

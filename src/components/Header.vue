@@ -3,9 +3,10 @@
             <nav class="position-fixed filter">
                 <div class="container">
                     <ul class="nav justify-content-center" >
+                        
                         <li class="nav-item" >
                             <router-link to="/" class="nav-link" href="#">
-                                <img src="{{ url('/img/logo.png') }}" width="60" alt=""> Jack
+                                Jack
                             </router-link>
                         </li>
                         <li class="nav-item" >
@@ -52,4 +53,7 @@ export default {
         -webkit-backdrop-filter: blur(10px);
         padding: 20px 40px;
     }
+    .nav-item a.router-link-exact-active {
+        font-weight: bold;
+}
 </style>

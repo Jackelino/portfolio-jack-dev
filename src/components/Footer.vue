@@ -4,7 +4,7 @@
                 <div class="row">
                     <div class="text-center space-3">
                         <small class="text-muted"> 
-                        © {{ date }} Jose Manuel Fernandez Gomez - All Rights Reserved. <a href="#" class="nav-link d-inline" target="_bank"><i class="bi bi-github"></i> Source</a>
+                        © {{ date }} <b>Jack</b> - All Rights Reserved. <a href="#" class="nav-link d-inline" target="_bank"><i class="bi bi-github"></i> Source</a>
                         </small>
                     </div>
                 </div>

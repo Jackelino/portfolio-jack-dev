@@ -1,6 +1,6 @@
 <template>
     <div class="contact">
-        <h5 class="text-start text-dark text-decoration">Contact</h5>
+        <h5 class="text-start text-dark text-decoration fw-bold">Contact</h5>
         <div>
             <ul class="nav flex-column">
                 <li class="nav-item">

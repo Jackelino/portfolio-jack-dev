@@ -1,6 +1,8 @@
 <template>
-    <div class="container position-static pad">
-        <router-view></router-view>
+    <div class="container position-static pad mvh-100">
+        <div class="container p-5">
+            <router-view></router-view>
+        </div>
     </div>
 </template>
 <script>
@@ -26,7 +28,7 @@ export default {
     padding-top: 90px;
     }
     .Portafolio {
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 90px;
     }
     .Contact {
