@@ -1,18 +1,18 @@
 <template>
-  <div :class="setting.theme">
+  <div :class="classTheme">
     <Header/>
     <Main/>
     <Footer/>
   </div>
-  
+
 </template>
 
 <script>
+import {mapState } from 'pinia';
+import {useThemeStore} from './store/useTheme';
 import Footer from './components/Footer.vue';
 import Header from './components/Header.vue';
 import Main from './components/Main.vue';
-import { useStore, mapState, mapActions} from 'vuex';
-import { onMounted } from 'vue';
 
 export default {
   name: 'App',
@@ -21,25 +21,15 @@ export default {
     Main,
     Footer,
   },
-  setup() {
-    const store = useStore();
-    onMounted(() => {
-        if(localStorage.getItem('theme') == null){
-          localStorage.setItem('theme', store.state.setting.stateTheme )
-          
-        }else{
-          let flagTheme = localStorage.getItem('theme');
-          store.dispatch('acctionTheme',flagTheme);
-
-        }
-    })
-  },
   computed: {
-    ...mapState(['setting'])
+    ...mapState(useThemeStore, ['theme']),
+    classTheme() {
+      return this.theme === 'bg-dark' ? 'bg-dark' : 'bg-light';
+    }
   }
 }
 </script>
 
 <style lang="scss">
-  @import "./assets/scss/main.scss"
+@import "./assets/scss/main.scss"
 </style>
