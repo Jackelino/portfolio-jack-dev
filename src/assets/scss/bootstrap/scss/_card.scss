@@ -42,7 +42,11 @@
     border-top: 0;
   }
 }
-
+.card:hover{
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  border:$card-border-width solid $blue;
+}
 .card-body {
   // Enable `flex-grow: 1` for decks and groups so that card blocks take up
   // as much space as possible, ensuring footers are aligned to the bottom.

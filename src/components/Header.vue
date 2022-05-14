@@ -10,12 +10,16 @@
             </router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/portfolio" class="nav-link ">Portafolio</router-link>
+              <router-link to="/portfolio" class="nav-link ">Portafolio</router-link>
           </li>
           <li>
             <button type="button" :class="buttonTheme" @click="changeTheme">
-              <i v-if="stateTheme" class="fa-solid fa-sun"></i>
-              <i v-else class="bi bi-moon-stars"></i>
+              <transition mode="out-in">
+                <i v-show="stateTheme" class="fa-solid fa-sun"></i>
+              </transition>
+              <transition mode="out-in">
+                <i v-show="!stateTheme" class="bi bi-moon-stars"></i>
+              </transition>
             </button>
           </li>
         </ul>
@@ -30,8 +34,7 @@ import {useThemeStore} from '../store/useTheme';
 export default {
   name: 'Header',
   data() {
-    return {
-    }
+    return {}
   },
   methods: {
     ...mapActions(useThemeStore, ['changeTheme']),
@@ -45,7 +48,7 @@ export default {
 
 }
 </script>
-<style scoped>
+<style scoped lang="scss">
 .filter {
   width: 100% !important;
   background-color: rgba(255, 255, 255, 0.3);
@@ -57,5 +60,16 @@ export default {
 
 .nav-item a.router-link-exact-active {
   font-weight: bold;
+}
+
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.4s ease-in-out;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>

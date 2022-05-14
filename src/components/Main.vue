@@ -1,7 +1,9 @@
 <template>
     <div class="container position-static pad mvh-100">
         <div class="container p-5">
-            <router-view></router-view>
+            <transition mode="out-in">
+              <router-view></router-view>
+            </transition>
         </div>
     </div>
 </template>
@@ -11,116 +13,17 @@ export default {
 };
 </script>
 
-<style scoped>
-    
-    .home{
-        min-height: 100vh;   
-        padding-top: 90px;
-        background: rgb(66,185,131);
-        background: linear-gradient(0deg, rgba(66,185,131,1) 0%, rgba(52,73,94,1) 50%);
-    }
-    .About {
-    min-height: 100vh;
-    padding-top: 90px;
-    }
-    .Services {
-    min-height: 100vh;
-    padding-top: 90px;
-    }
-    .Portafolio {
-    height: 100vh;
-    padding-top: 90px;
-    }
-    .Contact {
-    min-height: 100vh;
-    padding-top: 90px;
-    background-image: url("/img/layered-peaks-haikei.svg");
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center;
-    }
-    .btn-primar {
-    background-color: none;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-radius: 0px;
+<style scoped lang="scss">
 
-    color: white;
-    }
-    .btn-primar:hover {
-    background-color: #fff;
+/* we will explain what these classes do next! */
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease-in-out;
+}
 
-    transition: ease-in 0.3s;
-    }
-    .icon {
-    font-size: 50px;
-    }
-
-    .html {
-    color: #e34c26;
-    }
-    .css {
-    color: #264de4;
-    }
-    .javascript {
-    color: #f8da4e;
-    }
-    .git {
-    color: #f44d27;
-    }
-    .vue {
-    color: #41b883;
-    }
-    .laravel {
-    color: #ff2d20;
-    }
-    .bootstrap {
-    color: #7952b3;
-    }
-    .php {
-    color: #8892bf;
-    }
-    .python{
-        color: #3B77A8;
-    }
-    .guitar {
-    color: #b57049;
-    }
-    .microphone {
-    color: #596775;
-    }
-    .headphones {
-    color: #3f88be;
-    }
-    .gmail {
-    color: #d62d20;
-    }
-    .gmail:hover {
-    color: #d62d20;
-    }
-    .github {
-    color: rgb(14, 14, 14);
-    }
-    .github:hover {
-    color: rgb(14, 14, 14);
-    }
-    .linkedin {
-    color: #0a66c2;
-    }
-    .linkedin:hover {
-    color: #0a66c2;
-    }
-    .twitter {
-    color: #1d9bf0;
-    }
-    .twitter:hover {
-    color: #1d9bf0;
-    }
-    .imag {
-    border-radius: 50%;
-    }
-    .type{
-    color: #3d8bfd;
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 .tippy-box[data-theme~='tomato'] {
     background-color: rgba(255, 255, 255, 0.3);
@@ -129,7 +32,7 @@ export default {
     border: 1px solid rgba(0, 0, 0, 0.26) ;
     color: rgb(0, 0, 0);
   }
-    /*Animaciones*/ 
+    /*Animaciones*/
     /* Grow */
     .hvr-grow {
     display: inline-block;
