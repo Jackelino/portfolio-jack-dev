@@ -4,10 +4,10 @@
         <div class="container container-profession mt-4 mb-4">
             <div class="justify-content-center">
                 <div class="profession">
-                Full-stack developer
+                Full-Stack Developer
             </div>
             </div>
-            
+
         </div>
     </div>
 </template>

@@ -1,16 +1,22 @@
 <template>
-    <div class="about">
-        <h5 class="text-start text-dark text-decoration fw-bold">About</h5>
-        <p class="text-align text-black">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident laudantium incidunt aliquid obcaecati deserunt, quo ullam recusandae sed, enim nulla, maiores id eum itaque cum doloribus numquam cumque placeat animi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at delectus aliquam iste, voluptatum sapiente quae maxime quasi iure amet a placeat mollitia vero voluptatibus incidunt, et quibusdam labore nobis?</p>
-        <div class="space-3 text-center">
-            <button type="button" class="btn btn-primary text-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Desacargar"><i class="bi bi-download"></i> CV</button>
-        </div>
+  <div class="about">
+    <h5 class="text-start text-dark text-decoration fw-bold">About</h5>
+    <p class="text-align text-black">
+      I am a person passionate about web development, very committed to working to give a good quality of software in my
+      developments. I have extensive knowledge in the laravel framework, from creating and maintaining a web application
+      to creating an API. Also knowledge in Vue and framework like Bootstrap and tailwind css.
+    </p>
+    <div class="space-3 text-center">
+      <a type="button" class="btn btn-primary text-light" href="./src/assets/doc/JoseFernandezCV.pdf" download="JoseFernandezCV.pdf" data-bs-toggle="tooltip" data-bs-placement="bottom"
+              title="Desacargar"><i class="bi bi-download"></i> CV
+      </a>
     </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'About'
+  name: 'About'
 }
 </script>
 

@@ -3,8 +3,8 @@
         <div class="container">
                 <div class="row">
                     <div class="text-center space-3">
-                        <small class="text-muted"> 
-                        © {{ date }} <b>Jack</b> - All Rights Reserved. <a href="#" class="nav-link d-inline" target="_bank"><i class="bi bi-github"></i> Source</a>
+                        <small class="text-muted">
+                        © {{ date }} <b>Jack</b> - All Rights Reserved. <a href="https://github.com/Jackelino/portfolio-jack-dev" class="nav-link d-inline" target="_bank"><i class="bi bi-github"></i> Source</a>
                         </small>
                     </div>
                 </div>
