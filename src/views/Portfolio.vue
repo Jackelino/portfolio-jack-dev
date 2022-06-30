@@ -26,8 +26,8 @@ export default {
       informationWorks: [
         {
           name: 'SIGEHO',
-          description: 'Es una aplicación que genera todas las posibles combinaciones de horarios disponibles, de cada materia.',
-          pathImage: './src/assets/img/SIGEHO.jpg',
+          description: 'It is an application that generates all possible combinations of available timetables for each subject.',
+          pathImage: '/assets/SIGEHO.jpg',
           links: {
             deploy: 'https://sigeho-test-040522.netlify.app/',
             sourceCode: 'https://github.com/Jackelino/potro-horario-universitario'
@@ -35,20 +35,20 @@ export default {
         },
         {
           name: 'SEGIT',
-          description: 'sfdfsdfsd sdfdsfs',
-          pathImage: 'dfsdf',
+          description: 'Web application to schedule psychological appointments according to the schedule of the patient and the therapist.',
+          pathImage: '',
           links: {
             deploy: '',
-            sourceCode: ''
+            sourceCode: 'https://github.com/cedillojimcris/SEGIT'
           }
         },
         {
           name: 'API Rycky and Morty',
-          description: 'sfdfsdfsd sdfdsfs',
-          pathImage: 'dfsdf',
+          description: 'It is an application that consumes the api and displays its results.',
+          pathImage: '/assets/rick&mortyApi.jpg',
           links: {
-            deploy: '',
-            sourceCode: ''
+            deploy: 'https://rickmortyapi.surge.sh/',
+            sourceCode: 'https://github.com/Jackelino/Rick-Morty-API-updated-'
           }
         },
       ]

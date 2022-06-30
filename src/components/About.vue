@@ -7,7 +7,7 @@
       to creating an API. Also knowledge in Vue and framework like Bootstrap and tailwind css.
     </p>
     <div class="space-3 text-center">
-      <a type="button" class="btn btn-primary text-light" href="./src/assets/doc/JoseFernandezCV.pdf" download="JoseFernandezCV.pdf" data-bs-toggle="tooltip" data-bs-placement="bottom"
+      <a type="button" class="btn btn-primary text-light" href="/assets/JoseFernandezCV.pdf" download="JoseFernandezCV.pdf" data-bs-toggle="tooltip" data-bs-placement="bottom"
               title="Desacargar"><i class="bi bi-download"></i> CV
       </a>
     </div>

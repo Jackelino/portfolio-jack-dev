@@ -4,8 +4,8 @@
       <div class="container">
         <ul class="nav justify-content-center">
           <li class="nav-item" v-for="route in routers" :key="route">
-            <router-link :to="route.router" class="nav-link">
-              {{route.name}}
+            <router-link :to="route.router" class="nav-link" @click.prevent="resetScroll">
+              {{ route.name }}
             </router-link>
           </li>
           <li class="nav-item">
@@ -41,6 +41,10 @@ export default {
   },
   methods: {
     ...mapActions(useThemeStore, ['changeTheme']),
+    resetScroll() {
+      window.scroll(0, 0);
+    }
+
   },
   computed: {
     ...mapState(useThemeStore, ['theme', 'stateTheme']),
